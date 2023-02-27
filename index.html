@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Shaozu CAO</title>
+  
+  <meta name="author" content="Shaozu CAO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="images/glider-svgrepo-com.svg">
+</head>
+
+<body>
+  <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Shaozu CAO | 曹绍祖</name>
+              </p>
+              <p>I am a PhD graduate of <a href="https://uav.hkust.edu.hk/">HKUST Aerial Robotics Group</a>, supervised by <a href="https://uav.hkust.edu.hk/group/">Prof. Shaojie SHEN</a>.
+              </p>
+              <p>
+                At HKUST I mainly focused on high-precision and globally consistent state estimation with multiple low-cost sensors. By fusing the information from various low-cost and small-footprint sensors, I aim to design versatile, robust and accurate localization solutions for general spatial-aware applications. 
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:shaozu.cao@gmail.com">Email</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=4e_oC3UAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
+                <a href="https://github.com/shaozu">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/CAOShaozu_circle.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/CAOShaozu_circle.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in SLAM, computer vision, multi-sensor fusion and state estimation for real-world applications. I also love aerial robots such as quadrotors, helicopters and fixed-wing airplanes. 
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="gvins_stop()" onmouseover="gvins_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='gvins_image'>
+                  <!-- <video  width=100% height=100% muted autoplay loop> -->
+                  <video  width=100% muted autoplay loop>
+                  <!-- <video width="160" muted autoplay loop> -->
+                <source src="images/gvins_anim.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/gvins_still.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function gvins_start() {
+                  document.getElementById('gvins_image').style.opacity = "1";
+                }
+
+                function gvins_stop() {
+                  document.getElementById('gvins_image').style.opacity = "0";
+                }
+                gvins_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://github.com/HKUST-Aerial-Robotics/GVINS">
+                <papertitle>GVINS: Tightly Coupled GNSS-Visual-Inertial Fusion for Smooth and Consistent State Estimation</papertitle>
+              </a>
+              <br>
+              <strong>Shaozu Cao</strong>, 
+              Xiuyuan Lu, 
+              Shaojie Shen
+              <br>
+              <em>IEEE Transactions on Robotics (TRO)</em>, 2022  
+              <br>
+							<a href="https://arxiv.org/abs/2103.07899">paper</a> / 
+							<a href="https://www.youtube.com/watch?v=TebAal1ARnk">video</a> /
+							<a href="https://github.com/HKUST-Aerial-Robotics/GVINS">code</a>	
+              <p></p>
+              <p>GVINS significantly improves the global consistency of the visual-inertial odometry for long-range estimation.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="vins_stop()" onmouseover="vins_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='vins_image'><img src='images/vins_anim.gif' width=100%></div>
+                <img src='images/vins_still.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function vins_start() {
+                  document.getElementById('vins_image').style.opacity = "1";
+                }
+
+                function vins_stop() {
+                  document.getElementById('vins_image').style.opacity = "0";
+                }
+                vins_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://github.com/HKUST-Aerial-Robotics/VINS-Fusion">
+                <papertitle>VINS-Fusion: A General Optimization-based Framework for Global Pose Estimation with Multiple Sensors</papertitle>
+              </a>
+              <br>
+              Tong Qin,
+              <strong>Shaozu Cao</strong>, 
+              Jie Pan,
+              Peiliang Li, 
+              Shaojie Shen
+              <br>
+              <em>Arxiv</em>, 2019  
+              <br>
+							<a href="https://arxiv.org/abs/1901.03642">paper</a> / 
+							<a href="https://www.youtube.com/watch?v=1qye82aW7nI">video</a> /
+							<a href="https://github.com/HKUST-Aerial-Robotics/VINS-Fusion">code</a>	
+              <p></p>
+              <p>VINS-Fusion achieves accurate localization for autonomous applications with multiple sensor modelities support.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="aloam_stop()" onmouseover="aloam_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='aloam_image'><img src='images/aloam_anim.gif' width=100%></div>
+                <img src='images/aloam_still.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function aloam_start() {
+                  document.getElementById('aloam_image').style.opacity = "1";
+                }
+
+                function aloam_stop() {
+                  document.getElementById('aloam_image').style.opacity = "0";
+                }
+                aloam_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://github.com/HKUST-Aerial-Robotics/A-LOAM">
+                <papertitle>A-LOAM: An Advanced Implementation of LOAM</papertitle>
+              </a>
+              <br>
+              Tong Qin,
+              <strong>Shaozu Cao</strong>,
+              Shaojie Shen
+              <br>
+							<a href="https://github.com/HKUST-Aerial-Robotics/A-LOAM">code</a>	
+              <p></p>
+              <p>A-LOAM is an advanced implementation of <a href="https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf">LOAM</a> (J. Zhang and S. Singh.), which greatly simplifies the code structure and provides an easy reference for SLAM researchers.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="rnnvis_stop()" onmouseover="rnnvis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='rnnvis_image'><video  width=100% height=100% muted autoplay loop> -->
+                  <div class="two" id='rnnvis_image'><video  width=100% muted autoplay loop>
+                <source src="images/rnnvis_anim.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rnnvis_still.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function rnnvis_start() {
+                  document.getElementById('rnnvis_image').style.opacity = "1";
+                }
+
+                function rnnvis_stop() {
+                  document.getElementById('rnnvis_image').style.opacity = "0";
+                }
+                rnnvis_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="http://162.243.131.178/projects/rnnvis/">
+                <papertitle>RNNVis: Understanding Hidden Memories of Recurrent Neural Networks</papertitle>
+              </a>
+              <br>
+              Yao Ming,
+              <strong>Shaozu Cao</strong>,
+              Ruixiang Zhang
+              Zhen Li
+              Yuanzhe Chen
+              Yangqiu Song
+              Huamin Qu
+              <br>
+              <a href="http://162.243.131.178/projects/rnnvis/">project page</a> / 
+							<a href="https://arxiv.org/pdf/1710.10777.pdf">paper</a> / 
+							<a href="https://www.youtube.com/watch?v=0QFDNLdQ6_w">video</a> /
+							<a href="https://github.com/myaooo/rnnvis">code</a>		
+              <p></p>
+              <p>RNNVis enables visual analytics on understanding and comparing recurrent neural networks (RNNs) for text-based applications.</p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <span>&#169;</span> Copyright 2023 Shaozu CAO
+                <br>
+                Last updated on February 2023
+                <br>
+                Website template modified from <a href="https://github.com/jonbarron/jonbarron_website">Jonbarron</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
